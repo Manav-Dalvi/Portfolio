@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Face Emotion Detection Using CNN",
+    "desc": "Developed a real-time face emotion detection system using CNN.",
+    "image": "emotion",
+    "category": "Machine Learning",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Face_Emotion_Detection"
+    }
+  },
+  {
+    "name": "Brand Bridge V1", 
+    "desc": "Developed 'Brand Bridge', a Flask-based influencer engagement platform.",
+    "image": "bb",
+    "category": "Web Dev",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Brand_Bridge_V1"
+    }
+  },
+  {
+    "name": "Brand Bridge V2",
+    "desc": "Developed 'Brand Bridge V2', a Flask-based influencer engagement platform using VueJS.",
+    "image": "bb",
+    "category": "Web Dev",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Brand_Bridge_V2"
+    }
+  },
+  {
+    "name": "Personality Prediction",
+    "desc": "Predicting the Big Five Personality Traits from Large-Scale Data using Clustering Insights",
+    "image": "personality",
+    "category": "Machine Learning",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Personality_Prediction"
+    }
+  },
+  {
+    "name": "Tour De France - Case Study",
+    "desc": "A Comprehensive Case Study of Tour de France Database Architecture.",
+    "image": "tdf",
+    "category": "Database",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Tour_De_France-Case_Study"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "you",
+    "category": "Web Dev",
+    "links": {
+      "view": "#",
+      "code": ""
+    }
+  }
+]

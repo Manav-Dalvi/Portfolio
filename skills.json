@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/?size=100&id=38561&format=png&color=000000"
+    },
+    {
+        "name": "R Programming",
+        "icon": "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"
+    },
+    {
+        "name": "Machine Learning",
+        "icon": "https://img.icons8.com/?size=100&id=k4pDhxkT8V6A&format=png&color=000000"
+    },
+    {
+        "name": "Deep Learning",
+        "icon": "https://img.icons8.com/?size=100&id=gTN9eaZkKLFI&format=png&color=000000"
+    },
+    {
+        "name": "Computer Vision",
+        "icon": "https://img.icons8.com/?size=100&id=apebs8fnmi4m&format=png&color=000000"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "PowerBI",
+        "icon": "https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000"
+    },
+    {
+        "name": "Tableau",
+        "icon": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3ATableau_Software_Logo_Small.png&psig=AOvVaw1hM4G_G0w-OwMqEeSh627f&ust=1728376668599000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMi8ov3u-4gDFQAAAAAdAAAAABAE"
+    },
+    {
+        "name": "Excel",
+        "icon": "https://img.icons8.com/?size=100&id=UECmBSgBOvPT&format=png&color=000000"
+    },
+    {
+        "name": "Flask",
+        "icon": "https://img.icons8.com/?size=100&id=5mbMwDZ796xj&format=png&color=000000"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    
+    },
+    {
+        "name": "Vuejs",
+        "icon": "https://img.icons8.com/?size=100&id=BUnExfsRs3CW&format=png&color=000000"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "jQuery",
+        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "Spark",
+        "icon": "https://img.icons8.com/?size=100&id=0cRqPqlItA0E&format=png&color=000000"
+    },
+    {
+        "name": "Hadoop",
+        "icon": "https://img.icons8.com/?size=100&id=69132&format=png&color=000000"
+    }
+]
