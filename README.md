@@ -2,7 +2,7 @@
 
 This personal portfolio website serves as a platform to showcase my skills, projects, and professional journey. It’s designed to provide a comprehensive view of my expertise, from technical capabilities to creative problem-solving, offering potential employers and collaborators a glimpse into my work and how I can contribute to their projects.
 
-<a href="" target="_blank">**Visit Now** 🚀</a>
+<a href="https://manav-dalvi.github.io/Portfolio/" target="_blank">**Visit Now** 🚀</a>
 
 
 <h2>📬 Contact</h2>
