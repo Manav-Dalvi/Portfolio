@@ -1,4 +1,4 @@
-$(document).ready(function () {
+o$(document).ready(function () {
 
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
@@ -47,7 +47,7 @@ function showProjects(projects) {
         projectsHTML += `
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="./projects/${project.image}.jpg" alt="project" />
+      <img draggable="false" src="./projects/${project.image}.jpg" alt="hello" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
