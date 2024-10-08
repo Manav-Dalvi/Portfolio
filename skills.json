@@ -48,12 +48,13 @@
         "icon": "https://img.icons8.com/?size=100&id=5mbMwDZ796xj&format=png&color=000000"
     },
     {
-        "name": "Vuejs",
-        "icon": "https://img.icons8.com/?size=100&id=BUnExfsRs3CW&format=png&color=000000"
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
     },
     {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    
     },
     {
         "name": "AWS",
