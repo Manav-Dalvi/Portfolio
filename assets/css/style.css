@@ -938,6 +938,7 @@ header .navbar ul li a:hover {
 .experience-description ul {
   list-style-type: disc;
   margin-left: 20px;
+  font-size: 1.2rem;
 }
 
 .experience-feedback {
@@ -953,7 +954,7 @@ header .navbar ul li a:hover {
   margin-right: 8px;
   margin-bottom: 8px;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   display: inline-block;
 }
 
