@@ -21,11 +21,11 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Projects | Portfolio Manav Dalvi";
-            $("#favicon").attr("href", "/assets/images/favicon.png");
+            $("#favicon").attr("href", "/assets/images/icon.png");
         }
         else {
             document.title = "Projects | Portfolio Manav Dalvi";
-            $("#favicon").attr("href", "/assets/images/favicon.png");
+            $("#favicon").attr("href", "/assets/images/icon.png");
         }
     });
 
