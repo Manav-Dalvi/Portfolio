@@ -48,7 +48,7 @@ $(document).ready(function () {
                 alert("Form Submitted Successfully");
             }, function (error) {
                 console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
+                alert("Form Submission Failed! Try Contacting via Mail/LinkedIn");
             });
         event.preventDefault();
     });
@@ -110,7 +110,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.jpg" alt="project.jpg" />
+      <img draggable="false" src="assets/images/projects/${project.image}.jpg" alt="project.jpg" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
