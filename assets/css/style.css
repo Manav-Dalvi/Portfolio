@@ -770,6 +770,13 @@ header .navbar ul li a:hover {
   padding-left: 70px;
   padding-right: 25px;
   }
+  .experience .qoute {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
   .experience .container::before {
   left: 60px;
   border: medium solid #f68c09;
