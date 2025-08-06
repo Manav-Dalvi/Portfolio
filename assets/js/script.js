@@ -39,18 +39,80 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
+        event.preventDefault();
+        
+        // Get form elements
+        const form = document.getElementById("contact-form");
+        const submitBtn = document.getElementById("submit-btn");
+        const feedback = document.getElementById("form-feedback");
+        
+        // Validate form
+        if (!form.checkValidity()) {
+            showFeedback("Please fill all required fields correctly.", "error");
+            return;
+        }
+        
+        // Show loading state
+        submitBtn.classList.add("loading");
+        showFeedback("Sending your message...", "info");
+        
+        // Initialize EmailJS
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
+                form.reset();
+                submitBtn.classList.remove("loading");
+                showFeedback("Thank you! Your message has been sent successfully. I'll get back to you soon!", "success");
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    hideFeedback();
+                }, 5000);
             }, function (error) {
                 console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Contacting via Mail/LinkedIn");
+                submitBtn.classList.remove("loading");
+                showFeedback("Sorry! There was an error sending your message. Please try again or contact me directly via email/LinkedIn.", "error");
             });
-        event.preventDefault();
+    });
+    
+    // Helper functions for form feedback
+    function showFeedback(message, type) {
+        const feedback = document.getElementById("form-feedback");
+        feedback.textContent = message;
+        feedback.className = `form-feedback ${type}`;
+        feedback.style.display = "block";
+        feedback.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    
+    function hideFeedback() {
+        const feedback = document.getElementById("form-feedback");
+        feedback.style.display = "none";
+    }
+    
+    // Real-time validation feedback
+    const formInputs = document.querySelectorAll("#contact-form input, #contact-form textarea");
+    formInputs.forEach(input => {
+        input.addEventListener("blur", function() {
+            if (this.checkValidity()) {
+                this.style.borderColor = "#28a745";
+            } else {
+                this.style.borderColor = "#dc3545";
+            }
+        });
+        
+        input.addEventListener("input", function() {
+            if (this.value.length > 0) {
+                if (this.checkValidity()) {
+                    this.style.borderColor = "#28a745";
+                } else {
+                    this.style.borderColor = "#dc3545";
+                }
+            } else {
+                this.style.borderColor = "";
+            }
+        });
     });
     // <!-- emailjs to mail contact form data -->
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
 * {
@@ -17,8 +17,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
-  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  color: #23272f;
 }
 
 *::selection {
@@ -71,32 +72,35 @@ header {
   padding: 1.7rem 10%;
   height: 6.5rem;
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  box-shadow: 0 1px 8px rgba(44, 62, 80, 0.07);
 }
 section {
   min-height: 100vh;
   padding: 2rem 9%;
 }
 .heading {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: #23272f;
   font-weight: 800;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: #6c63ff;
 }
 header .logo {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #23272f;
 }
 header .logo i {
   font-size: 2.2rem;
 }
 header .logo:hover {
-  color: #fc8c05;
+  color: #6c63ff;
 }
 header .navbar ul {
   list-style: none;
@@ -109,16 +113,17 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0e2431;
+  color: #23272f;
   font-weight: 600;
+  font-family: 'Inter', 'Poppins', sans-serif;
   text-decoration: none;
   letter-spacing: 0.04rem;
   transition: 0.2s;
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: #6c63ff;
+  border-bottom: 0.2rem solid #6c63ff;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -222,26 +227,23 @@ header .navbar ul li a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .home .content h2 {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #23272f;
 }
 .home .content h2 span {
-  font-size: 5rem;
-  font-weight: 800;
-  color: #ff7b00;
+  color: #6c63ff;
 }
 .home .content p {
-  font-size: 2.5rem;
-  color: #000;
-  font-weight: 600;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  color: #444b59;
+  font-weight: 500;
   padding: 1rem 0;
 }
 .home .content p span {
-  font-size: 2.5rem;
-  color: rgb(148, 8, 8);
-  font-weight: 600;
-  padding: 1rem 0;
+  color: #ff7b54;
 }
 .home .btn {
   margin-top: 1rem;
@@ -251,9 +253,9 @@ header .navbar ul li a:hover {
   border-radius: 4em;
   transition: 0.5s;
   color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
-  font-family: "Nunito", sans-serif;
+  background: linear-gradient(90deg, #6c63ff 0%, #48c6ef 100%);
+  box-shadow: 0px 5px 18px rgba(76, 110, 245, 0.18);
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 }
 .home .btn span {
   font-weight: 700;
@@ -266,7 +268,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #1a047e;
+  background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
 }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -289,8 +291,8 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
-  background-color: #09011b;
+  color: #6c63ff;
+  background-color: #e3e6f3;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -304,7 +306,7 @@ header .navbar ul li a:hover {
 .social-icons a:focus,
 .social-icons a:hover {
   color: #fff;
-  background-color: #0685da;
+  background-color: #6c63ff;
 }
 .social-icons a.github:hover {
   background-color: #0e0e0e;
@@ -408,6 +410,9 @@ header .navbar ul li a:hover {
 }
 .resumebtn {
   margin-top: 6rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 .resumebtn .btn {
   padding: 1.7rem 3rem;
@@ -571,12 +576,16 @@ header .navbar ul li a:hover {
 .education .box-container .box .image {
   flex: 1 1 20rem;
   width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 .education .box-container .box img {
   object-fit: cover;
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 0.5rem;
 }
 .education .box-container .box .content {
   position: relative;
@@ -595,12 +604,12 @@ header .navbar ul li a:hover {
   margin-left: 1rem;
 }
 .education .box-container .box .content p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-left: 1rem;
   text-align: left;
 }
 .education h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: rgb(34, 109, 0);
   text-align: left;
   margin: 1rem;
@@ -691,7 +700,7 @@ header .navbar ul li a:hover {
   background: #ffd900;
 }
 .work .box-container .box .content .tag h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .work .box-container .box:hover .content {
   top: 25%;
@@ -703,7 +712,7 @@ header .navbar ul li a:hover {
   justify-content: center;
 }
 .work .desc p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .work .desc .btns {
   display: flex;
@@ -801,44 +810,66 @@ header .navbar ul li a:hover {
 }
 
 .experience-container {
-  background-color: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
 }
 
-.experience-header h2 {
-  margin: 0;
+.experience-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  color: #23272f;
+  font-weight: 700;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+.experience-header h3 {
+  margin: 0 0 1.5rem 0;
   font-size: 1.5rem;
+  color: #6c63ff;
+  font-weight: 600;
+  font-family: 'Inter', 'Poppins', sans-serif;
 }
 
 .experience-description ul {
   list-style-type: disc;
-  margin-left: 20px;
-  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #444b59;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+.experience-description ul li {
+  margin-bottom: 0.5rem;
 }
 
 .experience-feedback {
-  margin-top: 10px;
+  margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
 .feedback-tag {
-  background-color: #007bff;
+  background: linear-gradient(135deg, #6c63ff 0%, #48c6ef 100%);
   color: white;
-  padding: 5px 10px;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  border-radius: 20px;
-  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   display: inline-block;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.2);
 }
 
 .feedback-tag:hover {
-  background-color: #0056b3;
-  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
 }
 /* experience media queries ends */
 /* experience section ends */
@@ -1136,3 +1167,74 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* Contact Form Enhancement Styles */
+.form-feedback {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.form-feedback.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-feedback.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.form-feedback.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+/* Form validation styles */
+.field input:invalid,
+.message textarea:invalid {
+  border-color: #dc3545;
+}
+
+.field input:valid,
+.message textarea:valid {
+  border-color: #28a745;
+}
+
+/* Button loading state */
+.button-area button.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.button-area button.loading .btn-text {
+  display: none;
+}
+
+.button-area button.loading::after {
+  content: "Sending...";
+  display: inline-block;
+}
+
+/* Input focus enhancement */
+.field input:focus,
+.message textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}
+
+/* Responsive form feedback */
+@media (max-width: 768px) {
+  .form-feedback {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}

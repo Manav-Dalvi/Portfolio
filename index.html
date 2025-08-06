@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="manav dalvi, portfolio, manav, data science, portfolio design, portfolio website, personal portfolio" />
     <meta name="description" content="Welcome to Manav's Portfolio. Aspiring Data Professional" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Manav Dalvi | Data Professional Portfolio" />
+    <meta property="og:description" content="Welcome to Manav's Portfolio. Aspiring Data Professional" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://manav-dalvi.github.io/Portfolio/" />
+    <meta property="og:image" content="https://manav-dalvi.github.io/Portfolio/assets/images/profile2.jpg" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Manav Dalvi | Data Professional Portfolio" />
+    <meta name="twitter:description" content="Welcome to Manav's Portfolio. Aspiring Data Professional" />
+    <meta name="twitter:image" content="https://manav-dalvi.github.io/Portfolio/assets/images/profile2.jpg" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Manav Dalvi",
+      "url": "https://manav-dalvi.github.io/Portfolio/",
+      "image": "https://manav-dalvi.github.io/Portfolio/assets/images/profile2.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/manav-dalvi/",
+        "https://github.com/Manav-Dalvi"
+      ],
+      "jobTitle": "Aspiring Data Professional",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Verloop.io"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressCountry": "India"
+      }
+    }
+    </script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
@@ -102,7 +137,10 @@
         </div>
         
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1XtdvRca0FRve4ksFEyd1A2fhTs3A9k9s/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
+            <a href="/assets/Manav_Dalvi_Resume.pdf" class="btn" download><span>Download Resume</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1XtdvRca0FRve4ksFEyd1A2fhTs3A9k9s/view?usp=drive_link" target="_blank" class="btn"><span>View Online</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -191,16 +229,33 @@
 
     <div class="experience-container">
         <div class="experience-header">
+            <h1>Mapup.ai | Data Analyst</h1>
+            <h3>Remote</h3>
+            <h3>December 2024 - Present</h3>
+        </div>
+        <div class="experience-description">
+            <ul>
+                <li>Researched and modeled tolling systems for various international markets, contributing to core product accuracy.</li>
+                <li>Independently solved end-to-end toll logic for new regions and took ownership of high-priority data updates early on.</li>
+                <li>Performed data verification using official sources, test scenarios, and internal tools to ensure consistency and reliability.</li>
+                <li>Utilized advanced Excel functions and web scraping tools (Selenium, BeautifulSoup) to automate validation workflows.</li>
+                <li>Collaborated with enterprise clients to translate tolling insights into actionable strategies, enhancing platform adoption and decision-making.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-container">
+        <div class="experience-header">
             <h1>Verloop.io | Data Analyst Intern</h1>
-            <h3></h3>
+            <h3>Remote</h3>
             <h3>February 2024 - July 2024</h3>
         </div>
         <div class="experience-description">
             <ul>
                 <li>Developed and delivered impactful presentations with key insights to support Customer Success Managers.</li>
-                <li>Automated data extraction and preprocessing using Python (Pandas, NumPy) and Selenium, integrating updates to Google Sheets via API, improving efficiency by 20%.</li>
                 <li>Created integrated data visualizations for client presentations, enhancing engagement and comprehension using Google Sheets via API.</li>
                 <li>Applied advanced Sentiment Analysis and Topic Modeling techniques to analyze text data.</li>
+                <li>Automated data extraction and preprocessing using Python (Pandas, NumPy) and Selenium, integrating updates to Google Sheets via API, improving efficiency by 20%.</li>
             </ul>
         </div>
         <br>
@@ -253,26 +308,28 @@
       
       <div class="form-group">
         <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" name="name" placeholder="Name" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only)">
           <i class='fas fa-user'></i>
         </div>
         <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
+          <input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
           <i class='fas fa-envelope'></i>
         </div>
         <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
+          <input type="tel" name="phone" placeholder="Phone" pattern="[\+]?[0-9\s\-\(\)]{10,}" title="Please enter a valid phone number">
           <i class='fas fa-phone-alt'></i>
         </div>
         <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
+        <textarea placeholder="Message" name="message" required minlength="10" maxlength="1000" title="Please enter a message (minimum 10 characters)"></textarea>
         <i class="fas fa-comment-dots"></i>
         </div>
         </div>
       <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
+        <button type="submit" id="submit-btn">
+          <span class="btn-text">Submit</span> <i class="fa fa-paper-plane"></i>
+        </button>
       </div>
+      <div id="form-feedback" class="form-feedback" style="display: none;"></div>
     </form>
   </div>
   </div>
