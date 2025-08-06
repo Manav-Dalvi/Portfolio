@@ -56,26 +56,56 @@ $(document).ready(function () {
         submitBtn.classList.add("loading");
         showFeedback("Sending your message...", "info");
         
-        // Initialize EmailJS
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        // Get form data
+        const formData = new FormData(form);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const message = formData.get('message');
+        
+        // Try EmailJS first, fallback to direct email
+        try {
+            // Initialize EmailJS with modern SDK
+            emailjs.init("bYCByK8rWJAaLeq64");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                form.reset();
-                submitBtn.classList.remove("loading");
-                showFeedback("Thank you! Your message has been sent successfully. I'll get back to you soon!", "success");
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    hideFeedback();
-                }, 5000);
-            }, function (error) {
-                console.log('FAILED...', error);
-                submitBtn.classList.remove("loading");
-                showFeedback("Sorry! There was an error sending your message. Please try again or contact me directly via email/LinkedIn.", "error");
-            });
+            emailjs.sendForm('service_5ef9kdh', 'template_y1l9c39', '#contact-form')
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    form.reset();
+                    submitBtn.classList.remove("loading");
+                    showFeedback("Thank you! Your message has been sent successfully. I'll get back to you soon!", "success");
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        hideFeedback();
+                    }, 5000);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    // Fallback to direct email
+                    sendDirectEmail(name, email, phone, message);
+                });
+        } catch (error) {
+            console.log('EmailJS not available, using fallback');
+            sendDirectEmail(name, email, phone, message);
+        }
     });
+    
+    // Fallback function to send email directly
+    function sendDirectEmail(name, email, phone, message) {
+        const mailtoLink = `mailto:manavdalvi.md@gmail.com?subject=Portfolio Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
+        
+        // Try to open email client
+        window.open(mailtoLink, '_blank');
+        
+        const submitBtn = document.getElementById("submit-btn");
+        submitBtn.classList.remove("loading");
+        showFeedback("Email client opened! Please send the email manually. Thank you!", "info");
+        
+        // Hide message after 8 seconds
+        setTimeout(() => {
+            hideFeedback();
+        }, 8000);
+    }
     
     // Helper functions for form feedback
     function showFeedback(message, type) {

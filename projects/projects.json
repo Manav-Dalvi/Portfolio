@@ -1,6 +1,6 @@
 [
   {
-    "name": "Face Emotion Detection Using CNN",
+    "name": "Face Emotion Detection",
     "desc": "Developed a real-time face emotion detection system using CNN.",
     "image": "emotion",
     "category": "ml",

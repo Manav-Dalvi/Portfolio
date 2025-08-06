@@ -700,7 +700,12 @@ header .navbar ul li a:hover {
   background: #ffd900;
 }
 .work .box-container .box .content .tag h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0 1rem;
 }
 .work .box-container .box:hover .content {
   top: 25%;
@@ -712,7 +717,11 @@ header .navbar ul li a:hover {
   justify-content: center;
 }
 .work .desc p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: #2d3748;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 .work .desc .btns {
   display: flex;
@@ -723,15 +732,19 @@ header .navbar ul li a:hover {
 .work .desc .btns .btn {
   line-height: 0;
   display: inline;
-  padding: 1.5rem 2.5rem;
+  padding: 1.2rem 2rem;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #fff;
-  background: rgb(12, 12, 12);
-  margin-right: 2rem;
+  background: #1a365d;
+  margin-right: 1rem;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 .work .desc .btns .btn:hover {
-  background: #310ae0f5;
+  background: #38b2ac;
+  transform: translateY(-2px);
 }
 .work .viewall {
   display: flex;
@@ -743,16 +756,17 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 0.5em;
   transition: 0.5s;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-weight: 700;
   border: 2px solid #fff;
-  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  box-shadow: 0px 5px 10px rgba(26, 54, 93, 0.4);
   text-align: center;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 }
 .work .viewall .btn span {
   font-weight: 600;
   font-size: 1.7rem;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 }
 .work .viewall .btn i {
   margin-left: 0.3rem;
@@ -761,7 +775,7 @@ header .navbar ul li a:hover {
 }
 .work .viewall .btn:hover {
   background: #fff;
-  color: #000;
+  color: #1a365d;
 }
 .work .viewall .btn:hover i {
   transform: translateX(5px);
@@ -938,6 +952,7 @@ form .message textarea {
   border-radius: 5px;
   border: 1px solid rgb(51, 51, 51);
   background: #e5ecfb;
+  color: #23272f;
 }
 .field input::placeholder,
 .message textarea::placeholder {
@@ -945,7 +960,6 @@ form .message textarea {
 }
 .field input:focus,
 .message textarea:focus {
-  padding-left: 47px;
   border: 2px solid rgb(115, 3, 167);
 }
 .field input:focus ~ i,
