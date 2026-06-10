@@ -1,4 +1,6 @@
-o$(document).ready(function () {
+/* Projects page: navigation, project rendering, isotope filtering */
+
+$(document).ready(function () {
 
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
@@ -17,28 +19,11 @@ o$(document).ready(function () {
     });
 });
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Manav Dalvi";
-            $("#favicon").attr("href", "/assets/images/icon.png");
-        }
-        else {
-            document.title = "Projects | Portfolio Manav Dalvi";
-            $("#favicon").attr("href", "/assets/images/icon.png");
-        }
-    });
-
-
-// fetch projects start
+// fetch and render projects
 function getProjects() {
-    return fetch("projects.json")
-        .then(response => response.json())
-        .then(data => {
-            return data
-        });
+    return fetch("../assets/data/projects.json")
+        .then(response => response.json());
 }
-
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
@@ -47,7 +32,7 @@ function showProjects(projects) {
         projectsHTML += `
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="projects/${project.image}.jpg" alt="project.jpg"/>
+      <img draggable="false" src="../assets/images/projects/${project.image}" alt="${project.name}"/>
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -60,28 +45,11 @@ function showProjects(projects) {
         </div>
       </div>
     </div>
-    </div>`
+    </div>`;
     });
     projectsContainer.innerHTML = projectsHTML;
 
-    // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
-    // // vanilla tilt.js  
-
-    // /* ===== SCROLL REVEAL ANIMATION ===== */
-    // const srtop = ScrollReveal({
-    //     origin: 'bottom',
-    //     distance: '80px',
-    //     duration: 1000,
-    //     reset: true
-    // });
-
-    // /* SCROLL PROJECTS */
-    // srtop.reveal('.work .box', { interval: 200 });
-
-    // isotope filter products
+    // isotope filter
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
@@ -101,26 +69,4 @@ function showProjects(projects) {
 
 getProjects().then(data => {
     showProjects(data);
-})
-// fetch projects end
-
-
-
-// disable developer mode
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-    }
-}
+});

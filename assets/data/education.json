@@ -1,0 +1,30 @@
+[
+  {
+    "degree": "Master of Science: Data Science",
+    "school": "Technical University of Dortmund, Germany",
+    "period": "2026 - Present",
+    "status": "Pursuing",
+    "image": "tudo.jpg"
+  },
+  {
+    "degree": "Bachelor of Science: Programming and Data Science",
+    "school": "Indian Institute of Technology, Madras",
+    "period": "2021 - 2025",
+    "status": "Completed",
+    "image": "IITM.png"
+  },
+  {
+    "degree": "Master of Science: Big Data Analytics",
+    "school": "St. Xavier's College, Mumbai (Autonomous)",
+    "period": "2022 - 2024",
+    "status": "Completed",
+    "image": "xav.jpg"
+  },
+  {
+    "degree": "Bachelor of Science: Statistics",
+    "school": "Guru Nanak Khalsa College of Arts, Science & Commerce",
+    "period": "2019 - 2022",
+    "status": "Completed",
+    "image": "khalsa.jpg"
+  }
+]

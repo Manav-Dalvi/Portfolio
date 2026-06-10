@@ -1,0 +1,65 @@
+[
+  {
+    "name": "StudyBuddy – AI E-Learning Platform",
+    "desc": "AI-driven learning platform built with FastAPI and SQLAlchemy — Google Gemini Flash 2.0 with RAG pipelines (Milvus, ChromaDB), specialized AI agents for lectures and assignments, a Vue.js frontend, and JWT/OAuth2 role-based access.",
+    "image": "studybuddy.png",
+    "category": "ai",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi"
+    }
+  },
+  {
+    "name": "Face Emotion Detection",
+    "desc": "Real-time facial emotion detection system using CNNs — 83% accuracy on test data, served as a Flask web app with OpenCV live camera integration.",
+    "image": "emotion.jpg",
+    "category": "ml",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Face_Emotion_Detection"
+    }
+  },
+  {
+    "name": "Brand Bridge V2",
+    "desc": "Influencer engagement platform — Flask RESTful APIs with authentication, campaign management and ad request processing, plus a responsive Vue.js UI with role-based access control.",
+    "image": "bb.jpg",
+    "category": "web",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Brand_Bridge_V2"
+    }
+  },
+  {
+    "name": "Brand Bridge V1",
+    "desc": "Flask-based influencer sponsorship platform streamlining campaign and ad request coordination between influencers and sponsors.",
+    "image": "bb.jpg",
+    "category": "web",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Brand_Bridge_V1"
+    }
+  },
+  {
+    "name": "Personality Prediction",
+    "desc": "Predicting the Big Five personality traits from large-scale data using clustering insights.",
+    "image": "personality.jpg",
+    "category": "ml",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Personality_Prediction"
+    }
+  },
+  {
+    "name": "Tour De France – Case Study",
+    "desc": "A comprehensive case study of the Tour de France database architecture.",
+    "image": "tdf.jpg",
+    "category": "db",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Tour_De_France-Case_Study"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal portfolio website. Don't need much info about it, just scroll down. You're here only!",
+    "image": "you.jpg",
+    "category": "web",
+    "links": {
+      "code": "https://github.com/Manav-Dalvi/Portfolio"
+    }
+  }
+]

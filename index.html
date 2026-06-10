@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="manav dalvi, portfolio, manav, data science, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Manav's Portfolio. Aspiring Data Professional" />
+    <meta name="keywords" content="manav dalvi, portfolio, manav, data analyst, data science, data engineering, portfolio website, personal portfolio" />
+    <meta name="description" content="Manav Dalvi — Data Analyst based in Dortmund, Germany. Python, SQL, machine learning, and data engineering." />
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Manav Dalvi | Data Professional Portfolio" />
-    <meta property="og:description" content="Welcome to Manav's Portfolio. Aspiring Data Professional" />
+    <meta property="og:title" content="Manav Dalvi | Data Analyst Portfolio" />
+    <meta property="og:description" content="Manav Dalvi — Data Analyst based in Dortmund, Germany. Python, SQL, machine learning, and data engineering." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://manav-dalvi.github.io/Portfolio/" />
     <meta property="og:image" content="https://manav-dalvi.github.io/Portfolio/assets/images/profile2.jpg" />
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Manav Dalvi | Data Professional Portfolio" />
-    <meta name="twitter:description" content="Welcome to Manav's Portfolio. Aspiring Data Professional" />
+    <meta name="twitter:title" content="Manav Dalvi | Data Analyst Portfolio" />
+    <meta name="twitter:description" content="Manav Dalvi — Data Analyst based in Dortmund, Germany. Python, SQL, machine learning, and data engineering." />
     <meta name="twitter:image" content="https://manav-dalvi.github.io/Portfolio/assets/images/profile2.jpg" />
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -29,37 +29,52 @@
         "https://www.linkedin.com/in/manav-dalvi/",
         "https://github.com/Manav-Dalvi"
       ],
-      "jobTitle": "Aspiring Data Professional",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Verloop.io"
+      "jobTitle": "Data Analyst",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Technical University of Dortmund"
       },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Indian Institute of Technology, Madras"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "St. Xavier's College, Mumbai"
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Mumbai",
-        "addressCountry": "India"
+        "addressLocality": "Dortmund",
+        "addressCountry": "Germany"
       }
     }
     </script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Custom CSS (modular, one file per section) -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/education.css">
+    <link rel="stylesheet" href="./assets/css/experience.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/certifications.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/icon.png" type="image/x-png">
     <title>Portfolio | Manav Dalvi</title>
 </head>
-<body oncontextmenu="return false">
-
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
+<body>
 
 <!-- navbar starts -->
 <header>
         <a href="https://manav-dalvi.github.io/Portfolio/" class="logo">
-            <img src="assets/images/icon.png" alt="Your Logo" style="width: 25px; height: 25px;">
+            <img src="./assets/images/icon.png" alt="Logo">
             Manav M Dalvi
         </a>
 
@@ -70,8 +85,9 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -91,15 +107,14 @@
     </a>
     <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/manav-dalvi/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/manav-dalvi/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           <li><a class="github" aria-label="GitHub" href="https://github.com/Manav-Dalvi" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/manav._.dalvi"><i class="fab fa-instagram" target="_blank"></i></a></li>
-
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/manav._.dalvi" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </div>
     </div>
 <div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="Illustration of Manav Dalvi">
 </div>
 </section>
 <!-- hero section ends -->
@@ -108,36 +123,33 @@
 <!-- about section starts -->
 <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
+
     <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="Photo of Manav Dalvi">
     </div>
     <div class="content">
         <h3>I'm Manav Madhukar Dalvi</h3>
-        <span class="tag">Aspiring Data Professional</span>
-        
-        <p>I am an aspiring Data Professional based in Mumbai, India.  
-          I have a background in Statistics, Data Science, and Programming, and I am passionate about anything and everything data.  
-          My focus is on Big Data Technologies, Cloud, Machine Learning, and Computer Vision.  
-          I enjoy solving complex data challenges and continually improving my technical skills.  
-          I am always working towards expanding my knowledge and applying it to real-world problems, striving to enhance my capabilities in this field.
+        <span class="tag">Data Analyst</span>
+
+        <p>I am a Data Analyst based in Dortmund, Germany, with a solid foundation in analytics, machine learning, and programming,
+          and a track record of delivering real-world impact through data-driven solutions.
+          I am proficient in Python, SQL, and modern data visualization tools, and experienced in designing automation workflows,
+          developing scalable data pipelines, and translating complex data into actionable insights.
+          I am adept at working in fast-paced, collaborative environments to support strategic decision-making and operational efficiency.
         </p>
-        
+
         <div class="box-container">
-            <!-- <div class="box">
-              <p><span> age: </span> 20</p>
-              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-            </div> -->
             <div class="box">
               <p style="text-transform: none;"><span> email : </span> manavdalvi.md@gmail.com</p>
-              <p><span> location : </span> Mumbai, India - 4000066</p>
+              <p><span> location : </span> Dortmund, Germany - 44379</p>
+              <p><span> languages : </span> Marathi (Native), English (Proficient), German (Beginner)</p>
             </div>
         </div>
-        
+
         <div class="resumebtn">
-            <a href="/assets/Manav_Dalvi_Resume.pdf" class="btn" download><span>Download Resume</span>
+            <a href="./assets/Manav_Dalvi_Resume.pdf" class="btn" download><span>Download Resume</span>
                 <i class="fas fa-download"></i>
             </a>
             <a href="https://drive.google.com/file/d/1XtdvRca0FRve4ksFEyd1A2fhTs3A9k9s/view?usp=drive_link" target="_blank" class="btn"><span>View Online</span>
@@ -156,156 +168,67 @@
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
     <div class="container">
-          <div class="row" id="skillsContainer">
-
-            <!-- <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-                <span>AdobeXD</span>
-              </div>
-            </div> -->
-
-      </div>
-</div>
+          <div id="skillsContainer"></div>
+    </div>
 </section>
 <!-- skills section ends -->
 
 
-    
 <!-- education section starts -->
 <section class="education" id="education">
 
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+  <h2 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h2>
 
     <p class="qoute">Education is the journey from curiosity to understanding, building the skills that shape our future.</p>
 
-    <div class="box-container">
-
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="./assets/images/educat/xav.jpg" alt="">
-        </div>
-        <div class="content">
-        <h3>Master of Science: Big Data Analytics</h3>
-        <p>St. Xavier's College, Mumbai (Autonomous)</p>
-        <h4>2022-2024 | Completed</h4>
-        </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/IITM.png" alt="">
-      </div>
-      <div class="content">
-      <h3>Bachelor of Science: Programming and Data Science</h3>
-      <p>Indian Institute of Technology, Madras</p>
-      <h4>2021-2025 | Pursuing</h4>
-      </div>
-  </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/khalsa.jpg" alt="">
-      </div>
-      <div class="content">
-      <h3>Bachelor of Science: Statistics</h3>
-      <p>Guru Nanak Khalsa College of Arts, Commerce & Science</p>
-      <h4>2019-2022 | Completed</h4>
-      </div>
-    </div>
-
-</div>
+    <div class="box-container" id="educationContainer"></div>
 </section>
 <!-- education section ends -->
 
 <!-- experience section starts -->
-
 <section class="experience" id="experience">
 
   <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
-  <h3 class="quote" align="center">Experience is the bridge that connects theory to practice, revealing the true depth of understanding.</h3>
+  <p class="quote">Experience is the bridge that connects theory to practice, revealing the true depth of understanding.</p>
 
-  <div class="experience-section">
-
-    <div class="experience-container">
-        <div class="experience-header">
-            <h1>Mapup.ai | Data Analyst</h1>
-            <h3>Remote</h3>
-            <h3>December 2024 - Present</h3>
-        </div>
-        <div class="experience-description">
-            <ul>
-                <li>Researched and modeled tolling systems for various international markets, contributing to core product accuracy.</li>
-                <li>Independently solved end-to-end toll logic for new regions and took ownership of high-priority data updates early on.</li>
-                <li>Performed data verification using official sources, test scenarios, and internal tools to ensure consistency and reliability.</li>
-                <li>Utilized advanced Excel functions and web scraping tools (Selenium, BeautifulSoup) to automate validation workflows.</li>
-                <li>Collaborated with enterprise clients to translate tolling insights into actionable strategies, enhancing platform adoption and decision-making.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="experience-container">
-        <div class="experience-header">
-            <h1>Verloop.io | Data Analyst Intern</h1>
-            <h3>Remote</h3>
-            <h3>February 2024 - July 2024</h3>
-        </div>
-        <div class="experience-description">
-            <ul>
-                <li>Developed and delivered impactful presentations with key insights to support Customer Success Managers.</li>
-                <li>Created integrated data visualizations for client presentations, enhancing engagement and comprehension using Google Sheets via API.</li>
-                <li>Applied advanced Sentiment Analysis and Topic Modeling techniques to analyze text data.</li>
-                <li>Automated data extraction and preprocessing using Python (Pandas, NumPy) and Selenium, integrating updates to Google Sheets via API, improving efficiency by 20%.</li>
-            </ul>
-        </div>
-        <br>
-        <h3> Performance Feedback: </h3>
-        <div class="experience-feedback">
-            <div class="feedback-tag">Quick Learner</div>
-            <div class="feedback-tag">Effective Communicator</div>
-            <div class="feedback-tag">Attention to Detail</div>
-        </div>
-    </div>
-
-  </div>
+  <div class="experience-section" id="experienceContainer"></div>
 
 </section>
 <!-- experience section ends -->
-    
+
 <!-- work project section starts -->
 <section class="work" id="work">
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
-  <div class="box-container">
+  <div class="box-container"></div>
 
-  </div>
-
-<!-- 
-    <div class="viewall">
-  <a href="/Portfolio/projects" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div>
--->
 </section>
 <!-- work project section ends -->
 
+<!-- certifications section starts -->
+<section class="certifications" id="certifications">
 
+  <h2 class="heading"><i class="fas fa-certificate"></i> My <span>Certifications</span></h2>
+
+  <div class="box-container" id="certificationsContainer"></div>
+
+</section>
+<!-- certifications section ends -->
 
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
-  
+
   <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
 
   <div class="container">
     <div class="content">
       <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
+        <img draggable="false" src="./assets/images/contact1.png" alt="Contact illustration">
       </div>
     <form id="contact-form">
-      
+
       <div class="form-group">
         <div class="field">
           <input type="text" name="name" placeholder="Name" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only)">
@@ -329,7 +252,7 @@
           <span class="btn-text">Submit</span> <i class="fa fa-paper-plane"></i>
         </button>
       </div>
-      <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+      <div id="form-feedback" class="form-feedback"></div>
     </form>
   </div>
   </div>
@@ -353,15 +276,16 @@
           <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
           <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
           <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
           <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> projects</a>
+          <a href="#certifications"><i class="fas fa-chevron-circle-right"></i> certifications</a>
       </div>
 
       <div class="box">
           <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 84519 88866</p>
-          <p> <i class="fas fa-envelope"></i>manavdalvi.md@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Mumbai, India-400066</p>
+          <p> <i class="fas fa-phone"></i>+49 15511064546</p>
+          <p style="text-transform: none;"> <i class="fas fa-envelope"></i>manavdalvi.md@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Dortmund, Germany - 44379</p>
           <div class="share">
 
               <a href="https://www.linkedin.com/in/manav-dalvi/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
@@ -381,31 +305,32 @@
 <!-- scroll back to top -->
 
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- ==== VENDOR SCRIPTS (CDN) ==== -->
 <!-- jquery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- typed.js cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
+<!-- vanilla tilt.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- scroll reveal anim -->
 <script src="https://unpkg.com/scrollreveal"></script>
 
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
+<!-- emailjs -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="./assets/js/script.js"></script>
+<!-- ==== SITE SCRIPTS ==== -->
+<!-- particles background -->
+<script src="./assets/js/vendor/particles.min.js"></script>
+<script src="./assets/js/particles-config.js"></script>
+<!-- navigation, typing effect, scroll animations -->
+<script src="./assets/js/main.js"></script>
+<!-- data-driven section rendering -->
+<script src="./assets/js/render.js"></script>
+<!-- contact form -->
+<script src="./assets/js/contact.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Microsoft Certified: Power BI Data Analyst Associate",
+    "issuer": "Microsoft",
+    "date": "February 2025",
+    "icon": "fab fa-microsoft",
+    "link": "https://learn.microsoft.com/en-us/users/manavdalvi-2679/credentials/ecd2bcb8e95918a9"
+  },
+  {
+    "name": "AI Engineer Agentic Track: The Complete Agent & MCP Course",
+    "issuer": "Udemy",
+    "date": "July 2025",
+    "icon": "fas fa-robot",
+    "link": "https://www.udemy.com/certificate/UC-6b6daf32-c236-4fed-8f0b-b90b9f80dbd6/"
+  },
+  {
+    "name": "Statistics with Python Specialization",
+    "issuer": "Coursera",
+    "date": "May 2020",
+    "icon": "fas fa-chart-line",
+    "link": "https://coursera.org/share/1c08d8000b3f8faeae2449de08b5ca59"
+  }
+]

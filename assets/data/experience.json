@@ -1,0 +1,28 @@
+[
+  {
+    "company": "MapUp",
+    "role": "Data Analyst",
+    "location": "Remote, India",
+    "period": "December 2024 - February 2026",
+    "highlights": [
+      "Researched and modeled tolling systems for various international markets, contributing to core product accuracy.",
+      "Independently solved end-to-end toll logic for new regions and took ownership of high-priority data updates early on.",
+      "Managed and optimized data engineering pipelines using Python, S3, Glue batch jobs, and Dagster, ensuring reliability, scalability, and workflow efficiency.",
+      "Collaborated with enterprise clients to translate tolling insights into actionable strategies, enhancing platform adoption and decision-making."
+    ],
+    "feedback": []
+  },
+  {
+    "company": "Verloop.io",
+    "role": "Data Analyst Intern",
+    "location": "Remote, India",
+    "period": "February 2024 - July 2024",
+    "highlights": [
+      "Developed and delivered impactful presentations with key insights to support Customer Success Managers.",
+      "Created integrated data visualizations for client presentations, enhancing engagement and comprehension using Google Sheets via API.",
+      "Applied advanced Sentiment Analysis and Topic Modeling techniques to analyze text data.",
+      "Automated data extraction and preprocessing using Python (Pandas, NumPy) and Selenium, integrating updates to Google Sheets via API, improving efficiency by 20%."
+    ],
+    "feedback": ["Quick Learner", "Effective Communicator", "Attention to Detail"]
+  }
+]
