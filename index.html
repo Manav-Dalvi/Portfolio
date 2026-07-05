@@ -56,14 +56,14 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <link id='favicon' rel="shortcut icon" href="./assets/images/icon.png" type="image/x-png">
     <title>Manav Dalvi | Data Analyst Portfolio</title>
 </head>
 <body>
 
 <!-- navbar starts -->
 <header>
-        <a href="./" class="logo"><i class="fab fa-node-js"></i> Manav M Dalvi</a>
+        <a href="./" class="logo"><img src="./assets/images/icon.png" alt="Logo"> Manav M Dalvi</a>
 
         <div id="menu" class="fas fa-bars"></div>
         <nav class="navbar">
@@ -254,38 +254,54 @@
 <section class="experience" id="experience">
 
   <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
+  <p class="quote">Experience is the bridge that connects theory to practice, revealing the true depth of understanding.</p>
 
-  <div class="timeline">
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>MapUp</h2>
-        </div>
-        <div class="desc">
-            <h3>Data Analyst</h3>
-            <p>December 2024 - February 2026 | Remote, India</p>
-            <p>Modeled international tolling systems and managed data pipelines built on Python, AWS S3, Glue, and Dagster.</p>
-        </div>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Verloop.io</h2>
-        </div>
-        <div class="desc">
-            <h3>Data Analyst Intern</h3>
-            <p>February 2024 - July 2024 | Remote, India</p>
-            <p>Automated data extraction with Python and Selenium, and applied sentiment analysis and topic modeling to client text data.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="experience-section">
 
-  <div class="morebtn">
-    <a href="./experience/" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
+    <div class="experience-container">
+        <div class="experience-header">
+            <h3>MapUp | Data Analyst</h3>
+            <p>Remote, India</p>
+            <p>December 2024 - February 2026</p>
+        </div>
+        <div class="experience-description">
+            <ul>
+                <li>Researched and modeled tolling systems for various international markets, contributing to core product accuracy.</li>
+                <li>Independently solved end-to-end toll logic for new regions and took ownership of high-priority data updates early on.</li>
+                <li>Managed and optimized data engineering pipelines using Python, S3, Glue batch jobs, and Dagster, ensuring reliability, scalability, and workflow efficiency.</li>
+                <li>Collaborated with enterprise clients to translate tolling insights into actionable strategies, enhancing platform adoption and decision-making.</li>
+            </ul>
+        </div>
+        <h3 class="feedback-title">Performance Feedback:</h3>
+        <div class="experience-feedback">
+            <div class="feedback-tag">Problem Solving</div>
+            <div class="feedback-tag">Motivated</div>
+            <div class="feedback-tag">Diligent</div>
+        </div>
+    </div>
+
+    <div class="experience-container">
+        <div class="experience-header">
+            <h3>Verloop.io | Data Analyst Intern</h3>
+            <p>Remote, India</p>
+            <p>February 2024 - July 2024</p>
+        </div>
+        <div class="experience-description">
+            <ul>
+                <li>Developed and delivered impactful presentations with key insights to support Customer Success Managers.</li>
+                <li>Created integrated data visualizations for client presentations, enhancing engagement and comprehension using Google Sheets via API.</li>
+                <li>Applied advanced Sentiment Analysis and Topic Modeling techniques to analyze text data.</li>
+                <li>Automated data extraction and preprocessing using Python (Pandas, NumPy) and Selenium, integrating updates to Google Sheets via API, improving efficiency by 20%.</li>
+            </ul>
+        </div>
+        <h3 class="feedback-title">Performance Feedback:</h3>
+        <div class="experience-feedback">
+            <div class="feedback-tag">Quick Learner</div>
+            <div class="feedback-tag">Effective Communicator</div>
+            <div class="feedback-tag">Attention to Detail</div>
+        </div>
+    </div>
+
   </div>
 
 </section>
@@ -302,10 +318,10 @@
       <img draggable="false" src="./assets/images/projects/studybuddy.png" alt="StudyBuddy AI e-learning platform" />
       <div class="content">
         <div class="tag">
-        <h3>StudyBuddy</h3>
+        <h3>StudyBuddy – AI E-Learning Platform</h3>
         </div>
         <div class="desc">
-          <p>AI-driven learning platform built with FastAPI and SQLAlchemy — Google Gemini with RAG pipelines (Milvus, ChromaDB), AI agents for lectures and assignments, and a Vue.js frontend.</p>
+          <p>AI-driven learning platform built with FastAPI and SQLAlchemy — Google Gemini Flash 2.0 with RAG pipelines (Milvus, ChromaDB), specialized AI agents for lectures and assignments, a Vue.js frontend, and JWT/OAuth2 role-based access.</p>
           <div class="btns">
             <a href="https://github.com/Manav-Dalvi" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
@@ -335,9 +351,24 @@
         <h3>Brand Bridge V2</h3>
         </div>
         <div class="desc">
-          <p>Influencer engagement platform — Flask RESTful APIs with authentication, campaign management, and a responsive Vue.js UI with role-based access control.</p>
+          <p>Influencer engagement platform — Flask RESTful APIs with authentication, campaign management and ad request processing, plus a responsive Vue.js UI with role-based access control.</p>
           <div class="btns">
             <a href="https://github.com/Manav-Dalvi/Brand_Bridge_V2" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/bb.jpg" alt="Brand Bridge V1 platform" />
+      <div class="content">
+        <div class="tag">
+        <h3>Brand Bridge V1</h3>
+        </div>
+        <div class="desc">
+          <p>Flask-based influencer sponsorship platform streamlining campaign and ad request coordination between influencers and sponsors.</p>
+          <div class="btns">
+            <a href="https://github.com/Manav-Dalvi/Brand_Bridge_V1" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
       </div>
@@ -380,7 +411,7 @@
         <h3>Portfolio Website</h3>
         </div>
         <div class="desc">
-          <p>This very website — hand-built with HTML, CSS, and vanilla JavaScript, featuring a custom canvas background of math and code glyphs.</p>
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
           <div class="btns">
             <a href="https://github.com/Manav-Dalvi/Portfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
@@ -389,12 +420,6 @@
     </div>
 
   </div>
-
-<div class="viewall">
-  <a href="./projects/" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div>
 
 </section>
 <!-- work project section ends -->
