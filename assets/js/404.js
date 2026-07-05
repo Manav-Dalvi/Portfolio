@@ -1,5 +1,3 @@
-/* 404 page: mobile menu toggle */
-
 $(document).ready(function () {
 
     $('#menu').click(function () {

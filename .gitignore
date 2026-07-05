@@ -1,2 +1,8 @@
 # Personal source documents — never publish (contains passport number / DOB)
 **/EuroCV*.pdf
+
+# Internal working notes
+portfolio-roast.md
+
+# Tooling
+node_modules/

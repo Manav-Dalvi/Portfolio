@@ -1,12 +1,15 @@
-# Manav Dalvi — Personal Portfolio
+# Personal Portfolio — Manav Dalvi
 
-Personal portfolio website showcasing my skills, projects, work experience, education, and certifications as a Data Analyst.
+Portfolio website of Manav Dalvi, Data Analyst — showcasing work experience, projects, education, and certifications. Built with plain HTML, CSS, and vanilla JavaScript; all core content is static markup (crawlable and readable without JavaScript), with animations layered on top as progressive enhancement.
 
-<a href="https://manav-dalvi.github.io/Portfolio/" target="_blank">**Visit Now** 🚀</a>
+**[Visit Now 🚀](https://manav-dalvi.github.io/Portfolio/)**
 
-<h2>📬 Contact</h2>
+## Highlights
 
-Feel free to reach me through the below handles if you'd like to contact me.
+- **Glyph network background** — a custom, dependency-free canvas animation (`assets/js/glyph-network.js`) that renders drifting math/statistics/CS symbols (Σ, π, σ, ∫, `</>`, a scatter plot, a database cylinder, …) connected by proximity lines, with mouse repulsion. Respects `prefers-reduced-motion` and adapts particle count to viewport size and frame rate.
+- **Static-first content** — Experience, Education, Projects, and Certifications render in raw HTML; no client-side data fetching required.
+
+## 📬 Contact
 
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manav-dalvi)
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/manav._.dalvi)
+[![email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manavdalvi.md@gmail.com)

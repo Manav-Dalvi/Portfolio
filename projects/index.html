@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by Manav Dalvi — AI, machine learning, web development, and database work." />
+    <meta name="description" content="Projects by Manav Dalvi — an AI e-learning platform with RAG pipelines, CNN-based face emotion detection, Flask + Vue.js web platforms, and database case studies." />
     <link rel="stylesheet" href="./style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id='favicon' rel="shortcut icon" href="../assets/images/icon.png" type="image/x-png">
+    <link id='favicon' rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-png">
     <title>Projects | Manav Dalvi</title>
 </head>
 <body>
 
 <!-- navbar starts -->
 <header>
-        <a href="../" class="logo">
-            <img src="../assets/images/icon.png" alt="Logo" style="width: 25px; height: 25px;">
-            Manav M Dalvi
-        </a>
+        <a href="../" class="logo"><i class="fab fa-node-js"></i> Manav M Dalvi</a>
 
         <div id="menu" class="fas fa-bars"></div>
         <nav class="navbar">
@@ -39,17 +36,138 @@
 <!-- work project section starts -->
 <section class="work" id="work">
 
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> <span>Projects</span></h2>
 
   <div id="filters" class="button-group">
     <button class="btn is-checked" data-filter="*">All Projects</button>
     <button class="btn" data-filter=".ai">AI</button>
-    <button class="btn" data-filter=".web">Web Dev</button>
     <button class="btn" data-filter=".ml">Machine Learning</button>
+    <button class="btn" data-filter=".web">Web Dev</button>
     <button class="btn" data-filter=".db">Database</button>
   </div>
 
-  <div class="box-container"></div>
+  <div class="box-container">
+
+    <div class="grid-item ai">
+      <div class="box tilt">
+        <img draggable="false" src="../assets/images/projects/studybuddy.png" alt="StudyBuddy AI e-learning platform" />
+        <div class="content">
+          <div class="tag">
+            <h3>StudyBuddy</h3>
+          </div>
+          <div class="desc">
+            <p>AI-driven learning platform built with FastAPI and SQLAlchemy — Google Gemini with RAG pipelines (Milvus, ChromaDB), AI agents for lectures and assignments, and a Vue.js frontend with JWT/OAuth2 role-based access.</p>
+            <div class="btns">
+              <a href="https://github.com/Manav-Dalvi" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item ml">
+      <div class="box tilt">
+        <img draggable="false" src="../assets/images/projects/emotion.jpg" alt="Face emotion detection project" />
+        <div class="content">
+          <div class="tag">
+            <h3>Face Emotion Detection</h3>
+          </div>
+          <div class="desc">
+            <p>Real-time facial emotion detection using CNNs — 83% accuracy on test data, served as a Flask web app with OpenCV live camera integration.</p>
+            <div class="btns">
+              <a href="https://github.com/Manav-Dalvi/Face_Emotion_Detection" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item web">
+      <div class="box tilt">
+        <img draggable="false" src="../assets/images/projects/bb.jpg" alt="Brand Bridge V2 platform" />
+        <div class="content">
+          <div class="tag">
+            <h3>Brand Bridge V2</h3>
+          </div>
+          <div class="desc">
+            <p>Influencer engagement platform — Flask RESTful APIs with authentication, campaign management and ad request processing, plus a responsive Vue.js UI with role-based access control.</p>
+            <div class="btns">
+              <a href="https://github.com/Manav-Dalvi/Brand_Bridge_V2" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item web">
+      <div class="box tilt">
+        <img draggable="false" src="../assets/images/projects/bb.jpg" alt="Brand Bridge V1 platform" />
+        <div class="content">
+          <div class="tag">
+            <h3>Brand Bridge V1</h3>
+          </div>
+          <div class="desc">
+            <p>Flask-based influencer sponsorship platform streamlining campaign and ad request coordination between influencers and sponsors.</p>
+            <div class="btns">
+              <a href="https://github.com/Manav-Dalvi/Brand_Bridge_V1" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item ml">
+      <div class="box tilt">
+        <img draggable="false" src="../assets/images/projects/personality.jpg" alt="Personality prediction project" />
+        <div class="content">
+          <div class="tag">
+            <h3>Personality Prediction</h3>
+          </div>
+          <div class="desc">
+            <p>Predicting the Big Five personality traits from large-scale data using clustering insights.</p>
+            <div class="btns">
+              <a href="https://github.com/Manav-Dalvi/Personality_Prediction" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item db">
+      <div class="box tilt">
+        <img draggable="false" src="../assets/images/projects/tdf.jpg" alt="Tour de France case study" />
+        <div class="content">
+          <div class="tag">
+            <h3>Tour de France - Case Study</h3>
+          </div>
+          <div class="desc">
+            <p>A comprehensive case study of the Tour de France database architecture.</p>
+            <div class="btns">
+              <a href="https://github.com/Manav-Dalvi/Tour_De_France-Case_Study" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item web">
+      <div class="box tilt">
+        <img draggable="false" src="../assets/images/projects/you.jpg" alt="Portfolio website project" />
+        <div class="content">
+          <div class="tag">
+            <h3>Portfolio Website</h3>
+          </div>
+          <div class="desc">
+            <p>This very website — hand-built with HTML, CSS, and vanilla JavaScript, featuring a custom canvas background of math and code glyphs.</p>
+            <div class="btns">
+              <a href="https://github.com/Manav-Dalvi/Portfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="backbtn">
     <a href="../#work" class="btn">
@@ -66,20 +184,18 @@
 <!-- scroll back to top -->
 
 
-<!-- ==== VENDOR SCRIPTS (CDN) ==== -->
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
 <!-- jquery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- vanilla tilt.js -->
+<!-- vanilla tilt.js links -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
 
 <!-- isotope filter plugin cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- ==== SITE SCRIPTS ==== -->
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
 <script src="./script.js"></script>
 
 </body>
