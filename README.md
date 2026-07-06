@@ -1,4 +1,4 @@
-# Manav Dalvi — Personal Portfolio
+# Manav Dalvi - Personal Portfolio
 
 Personal portfolio website showcasing my skills, projects, work experience, education, and certifications as a Data Analyst.
 
